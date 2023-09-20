@@ -1,0 +1,429 @@
+    header{
+        background-color:#ffffff;
+        color:rgb(0, 0, 0);
+        font-family: "neuzeit-grotesk",sans-serif !important;
+        font-style: normal;
+        }
+
+    .maintitle1{
+        text-align:center;
+        font-size: 20px;
+        font-weight:normal
+    }
+    .maintitle2{
+        text-align: left;
+        font-size: 44px;
+        font-weight:bold;
+        margin: revert;
+    }
+
+
+    .m1 {
+            display: flex;
+    }
+    
+    .main{
+        background-color:#98c9fa;
+    } 
+    .main2{
+        background-color:#fff;
+    }  
+    .accordion-title{  
+    text-align:center;
+    font-size: xxx-large;
+    font-weight: bold;
+    color: #3c89d8
+    }
+    .container {
+        width: 100%;
+    } 
+    .center-text{
+        text-align:center;
+        font-size: xx-large;
+    font-weight: bold;
+        
+    }
+    .center-text1{
+        text-align:center;
+        font-size:medium;
+        color: #3c89d8
+      
+    }
+
+    .list1 {
+            padding: 0;
+            width:100%;
+            display:flex;
+            gap: 50px;
+    }
+
+    .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo img {
+        max-width: 100px;
+    }
+    .menu{
+        float: right;
+        width: 100%;
+    }
+    .menu li {
+        list-style: none;
+        margin: 0 10px;
+        float: left;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    .slider{
+        padding:30px;
+    }
+    .appointment{
+        color: #000;
+    }
+
+    .main .parent{
+        background: #98c9fa;
+    }
+    .main2 .parent{
+        background: #fff;
+        padding: 0px;
+        margin-bottom: 43px;
+    }
+    .parent {
+        position: relative;
+        width: 100%;
+        height: 457px;
+    }
+    .child_1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 360px;
+        padding: 5px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    .child_1 p{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .child_1 h2,.child_1 h3{
+        font-size:30px;
+        font-weight: bold;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .child_1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 360px;
+        padding: 5px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    .child_2 p{
+      
+        font-size:30px;
+        font-weight:normal;
+        padding: 0px;
+        margin: 0px;padding-top: 50px;
+        margin-bottom: 150px;
+       color: #575252
+    }
+    .child_2 p1 {
+        font-size:20px;
+        font-weight:bold;
+        padding: 0px;
+        margin: 0px;padding-top: 50px;
+        }
+
+    .comingsoon {
+        font-size: 47px;
+        font-weight: bold;
+        padding: 147px;
+    }
+
+    .white-solid-button {
+        background: #FE637C !important;
+        color: #FFF;
+        padding: 20px;
+        width: 100%;
+        font-size: 14px !important;
+        line-height: 14px;
+        font-weight: 700;
+        border-radius: 28px;
+        box-shadow: none;
+        transition: .2s;
+        text-decoration: none;
+    }
+
+    .focus-solid-button {
+        background: #3c89d8 !important;
+        color: #FFF;
+        padding: 20px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        border-radius: 28px;
+        box-shadow: none;
+        transition: .2s;
+        text-decoration: none;
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .box {
+        flex: 1;
+        padding: 39px;
+        text-align: center;
+        border: 1px solid #ddd;
+        margin: px;
+        min-height: 250px;
+        color: #575252;
+    }
+    .box .text2{
+        min-height:150px;
+    }
+    .box h2 {
+        font-weight: bold;
+        font-size: x-large;
+        color: #2b7fd4;
+    }
+    
+    .content{
+        width: 100%;
+    }
+
+    .accordion-trigger {
+        background-color: #c4dff0;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        cursor: pointer;
+        user-select: none;
+        margin: 5px;
+        border-radius: 15px;
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.15em;
+        font-weight: bold;
+        color:#585454
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+        
+       
+    }
+    
+    input[type="checkbox"]:checked + .accordion-trigger + .accordion-content {
+        max-height: 1000px; 
+    }
+    footer{
+        float:left;
+        padding: 20px;
+        
+    }
+    .details{
+        text-align:center;
+        padding:60px
+    }
+    .details .maintitle1{
+        font-size: 35px;
+        padding-bottom: 30px;
+        font-weight: bold;
+    }
+    .details .white-solid-button{
+        font-size :26px !important;
+        padding:20px;
+    }
+    footer p {
+        text-align: left;
+        width: 100%;
+        float: left;
+        padding-left: 45px;
+        font-size: 18px;
+        font-weight: bold
+    }
+
+    p{
+        line-height: 0px;
+        padding-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        /* تلفن‌های همراه */
+        body {
+            font-size: 14px;
+        }
+            .header {
+            padding: 10px;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        /*  تبلت‌ها */
+        .main-content {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+        /*  لپ‌تاپ‌ها */
+        .sidebar {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1366px) {
+        /*  دسکتاپ‌ها */
+        .header {
+            background-color: #333;
+            color: #fff;
+        }
+    }
+    @media only screen and (min-width: 1600px) {
+        /*  صفحه نمایش‌های بزرگ */
+        .main-content {
+            font-size: 18px;
+        }
+    }
+    
+
+
+    
+    .login-container {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        margin-top: 0;
+        margin: ;
+        font-size: 2em;
+        font-weight: bold;
+        margin-block: revert;
+    }
+    
+    label {
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: left;
+        
+    }
+    
+    input,select,textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px -12px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        border-color: #98c9fa
+    }
+    
+    button {
+        background-color: #98c9fa;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    button:hover {
+        background-color: #0ac7e9;
+    }
+
+    form{
+        width: 600px;
+        margin: 0 auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+
+
+    .table-tasks {
+        width: 700px;
+        border-collapse: collapse;
+        margin: 0 auto;
+        font-size: 1.2rem;
+
+    }
+    
+
+    .table-tasks th {
+        background-color: #f2f2f2;
+        text-align: center;
+    }
+
+    .table-tasks tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+ 
+    .table-tasks tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+    
+
+    .table-tasks th,
+    .table-tasks td {
+        padding: 0.5em;
+        border: 1px solid #dddddd;
+    }
+    
+
+    .table-tasks th {
+        background-color: #7db1d2;
+        color: white;
+    }
+    
+
+    .table-tasks td {
+        color: #333;
+    }
+    
+
